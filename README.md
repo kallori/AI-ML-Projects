@@ -44,11 +44,18 @@ choose random forest and did cross validation
 
 # Evaluate with cross-validation. I split the data into multiple data and test it multiple times on random forest. 
 # in this case cv=5 means the dataset is split into 5 parts. imes (each part gets a turn being the test set).
+
  #after each teration, the model’s performance (accuracy in this case) is recorde.the final cross-validation score is the average accuracy across all 5 iterations, providing a more robust estimate of model performance. 
 
 rf_scores = cross_val_score(rf, X_train, y_train, cv=5)
 print(f"Random Forest Cross-Validation Accuracy: {rf_scores.mean()}")
 
+
+Created a GENAI custom Chatbot using OpenAI: 
+
+Using React for front end
+MSSQL for Database
+OpenAI for API Calls
 
 
 
