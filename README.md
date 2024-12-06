@@ -43,6 +43,7 @@ Random forest gave me the most accurate results-82% probability between y_pred a
 choose random forest and did cross validation 
 
 # confusion matrix to check for accuracy of the model. TP=Total Positive TN=Total Negative FP=False Positive FN=False Negative
+compare y_pred and y_test for CM
 Accuracy=[(TP+TN)/TP+TN+FP+FN ] vs Error rate= [(FP+FN)/TP+TN+FP+FN ]
 Choose a model with lowest ER and highest accuracy
 
