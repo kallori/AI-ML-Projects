@@ -42,6 +42,10 @@ Random forest gave me the most accurate results-82% probability between y_pred a
 
 choose random forest and did cross validation 
 
+# confusion matrix to check for accuracy of the model. TP=Total Positive TN=Total Negative FP=False Positive FN=False Negative
+Accuracy=[(TP+TN)/TP+TN+FP+FN ] vs Error rate= [(FP+FN)/TP+TN+FP+FN ]
+Choose a model with lowest ER and highest accuracy
+
 # Evaluate with cross-validation. I split the data into multiple data and test it multiple times on random forest. 
 # in this case cv=5 means the dataset is split into 5 parts. imes (each part gets a turn being the test set).
 
@@ -52,6 +56,9 @@ print(f"Random Forest Cross-Validation Accuracy: {rf_scores.mean()}")
 
 
 Created a GENAI custom Chatbot using OpenAI: 
+Used RAG to build knowledge base from external sources.
+A foundational model can be chosen if you have access to it.
+Prompt Engineering with few shot prompting(examples) and role personas to help guild the chatbot with better outputs
 
 Using React for front end
 MSSQL for Database
